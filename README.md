@@ -5,7 +5,7 @@
 - Step 2: Run the program as administrator
 - Step 3: Enter your username and press Enter. Enjoy!
 ## Who is this for?
-This program is primarily made for OEM computers with Windows preinstalled. If you're reinstalling Windows, consider creating "AutoUnattended.xml" instead of using this
+This program is primarily made for OEM computers with Windows preinstalled. If you're reinstalling Windows, consider creating "Autounattend.xml" instead of using this
 ## Why C++ and a lot of `system()` functions?
 Because I am dumb.
 ## Plans for the future

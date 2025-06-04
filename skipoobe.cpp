@@ -23,13 +23,13 @@ int main() {
     system("cls");
     string usr;
     if (not(IsRunningAsAdministrator())) {
-        cout << "Run this program in Administrator";
+        cout << "Execute este programa como Administrador";
         return 0;
     }
     cout << "====== Microsoft OOBE Bypass ======" << "\n";
-    cout << "Local Account - Enter your username: "; getline(cin, usr);
+    cout << "Conta Local - Digite o nome de usuário: "; getline(cin, usr);
     if (usr.empty()) {
-        usr = "Admin"; //Override if user doesn't input a name
+        usr = "Local"; //Override if user doesn't input a name
     }
     // --- Actual payload ---
 
@@ -45,12 +45,12 @@ int main() {
     string cmdl = "net user /add \"" + usr + "\"";
     char *usrn = &cmdl[0];
     system(usrn);
-    cmdl = "net localgroup /add administrators \"" + usr + "\"";
+    cmdl = "net localgroup /add Administradores \"" + usr + "\"";
     char *usrad = &cmdl[0];
     system(usrad);
 
     // -----------------------
-    cout << "\n" << "Your computer will restart in 5 seconds" << "\n";
+    cout << "\n" << "Seu computador será reiniciado em 5 segundos" << "\n";
     system("shutdown /r /t 5");
     system("pause");
 }

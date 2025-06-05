@@ -1,4 +1,4 @@
-# skipoobe
+# skipoobe - Pular OOBE para Windows em idioma PT-BR
 ![oobebypass](https://i.ibb.co/jvj5J6p/image.png)
 ## Como usar
 - Entre no modo de auditoria pressionando Ctrl + Shift + F3.
